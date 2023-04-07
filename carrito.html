@@ -12,7 +12,16 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">Fashify</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
         <aside class="aside">
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i></i>
+            </button>
             <header>
                 <h1 class="logo">Fashify</h1>
             </header>
@@ -20,11 +29,13 @@
                 <ul class="menu">
                     <li>
                         <a class="btn-menu btn-volver" href="./index.html"><i class="bi bi-arrow-left"></i>
-                            Seguir Comprando </a>
+                            Seguir Comprando 
+                        </a>
                     </li>
                     <li>
-                        <a class="btn-menu btn-carrito active" href="./carrito.html"><i class="bi bi-cart-fill"></i>
-                            Carrito </a>
+                        <a class="btn-menu btn-carrito active" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i>Carrito 
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -58,5 +69,6 @@
         </main>
     </div>
     <script src="./js/carrito.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

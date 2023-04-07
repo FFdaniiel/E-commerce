@@ -49,7 +49,6 @@ function cargarProductosCarrito() {
             contenedorCarritoProductos.append(div);
         });
     
-    
     }else {
     
         contenedorCarritoVacio.classList.remove('disabled');
@@ -86,14 +85,12 @@ function eliminarDelCarrito(e) {
 btnVaciar.addEventListener('click', vaciarCarrito);
 
 function vaciarCarrito() {
-
     productosEnCarrito.length = 0;
     localStorage.setItem('productos-en-carrito', JSON.stringify(productosEnCarrito));
     cargarProductosCarrito()
 }
 
 // Actualizar el total
-
 function actualizarTotal(){
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc +(producto.precio * producto.cantidad), 0);
     contenedorTotal.innerText =  `$${totalCalculado}`
